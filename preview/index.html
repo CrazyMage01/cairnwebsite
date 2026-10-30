@@ -10,6 +10,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 64px;align-items:start}
+.row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 40px}
+a.card:hover h2{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
+a.more:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
+@media (max-width:900px){.cards{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:760px){.row2,.row3{grid-template-columns:minmax(0,1fr)}}
 </style>
 <style>a:focus-visible{outline:2px solid #1D2229;outline-offset:3px}</style>
 </head>
@@ -39,106 +46,99 @@ body{margin:0}
 </div>
 </header>
 
-<section style="max-width:1120px;margin:0 auto;padding:clamp(56px,9vw,120px) clamp(20px,5vw,48px) clamp(56px,8vw,104px);box-sizing:border-box">
-<p style="margin:0;max-width:1010px;font-size:clamp(26px,3.5vw,42px);line-height:1.27;letter-spacing:-0.02em;font-weight:440;color:#5A6270"><span style="color:#1D2229;font-weight:620;font-stretch:118%">We help experienced professionals move into the AI safety roles where they'll matter most.</span> We <a href="#routing" style="color:#1D2229;text-decoration:underline;text-decoration-color:#D94A2B;text-decoration-thickness:3px;text-underline-offset:0.2em">route people to impactful roles</a>, <a href="#hiring" style="color:#1D2229;text-decoration:underline;text-decoration-color:#1C8A5E;text-decoration-thickness:3px;text-underline-offset:0.2em">help organisations hire well</a>, and <a href="#infrastructure" style="color:#1D2229;text-decoration:underline;text-decoration-color:#3552CC;text-decoration-thickness:3px;text-underline-offset:0.2em">coordinate and build talent infrastructure</a>.</p>
-
+<section style="max-width:1120px;margin:0 auto;padding:clamp(72px,10vw,120px) clamp(20px,5vw,48px) clamp(48px,6vw,72px);box-sizing:border-box">
+<p style="margin:0;font-size:clamp(28px,3.4vw,44px);line-height:1.22;letter-spacing:-0.02em;font-weight:440;color:#5A6270"><span style="color:#1D2229;font-weight:620;font-stretch:118%">We help experienced professionals move into the AI safety roles where they'll matter most.</span> We <a href="#routing" style="color:#1D2229;text-decoration:underline;text-decoration-color:#D94A2B;text-decoration-thickness:3px;text-underline-offset:0.2em">route people to impactful roles</a>, <a href="#hiring" style="color:#1D2229;text-decoration:underline;text-decoration-color:#1C8A5E;text-decoration-thickness:3px;text-underline-offset:0.2em">help organisations hire well</a>, and <a href="#infrastructure" style="color:#1D2229;text-decoration:underline;text-decoration-color:#3552CC;text-decoration-thickness:3px;text-underline-offset:0.2em">coordinate and build talent infrastructure</a>.</p>
 </section>
 
-<section id="routing" style="background:#FBEAE4">
-<div style="max-width:1120px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-wrap:wrap;gap:28px 64px">
-<div style="flex:1 1 260px;max-width:320px">
-<h2 style="margin:0;font-stretch:118%;font-weight:620;font-size:clamp(26px,2.6vw,32px);line-height:1.1;letter-spacing:-0.02em;color:#B23A1E">Routing individuals</h2>
-<p style="margin:12px 0 0;font-size:16px;line-height:1.55;color:#5E4339">For experienced people moving into AI safety, or already in it and looking for a better fit.</p>
+<section style="max-width:1120px;margin:0 auto;padding:0 clamp(20px,5vw,48px) clamp(64px,8vw,104px);box-sizing:border-box">
+<div class="cards">
+
+<a id="routing" class="card" href="candidates.html" style="background:#FBEAE4;border-radius:2px;padding:32px 28px;display:flex;flex-direction:column;color:#1D2229;text-decoration:none">
+<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px">
+<h2 style="margin:0;font-stretch:118%;font-weight:620;font-size:26px;line-height:1.12;letter-spacing:-0.02em;color:#B23A1E">Routing individuals</h2>
+<span style="flex:0 0 36px;width:36px;height:36px;border-radius:50%;border:1.5px solid #B23A1E;color:#B23A1E;display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
 </div>
-<div style="flex:999 1 520px;min-width:0">
-<ol style="margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:28px 40px">
-<li style="flex:1 1 180px;min-width:0"><h3 style="margin:0 0 6px;font-size:18px;font-weight:600;line-height:1.35"><span style="color:#B23A1E;margin-right:8px">1</span>Talk</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#2E333B">A 30-minute call about your experience and what you want next.</p></li>
-<li style="flex:1 1 180px;min-width:0"><h3 style="margin:0 0 6px;font-size:18px;font-weight:600;line-height:1.35"><span style="color:#B23A1E;margin-right:8px">2</span>Assess</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#2E333B">We tell you where we think you'd fit, including roles that aren't advertised.</p></li>
-<li style="flex:1 1 180px;min-width:0"><h3 style="margin:0 0 6px;font-size:18px;font-weight:600;line-height:1.35"><span style="color:#B23A1E;margin-right:8px">3</span>Refer</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#2E333B">We send you roles to look at. We only refer you where we think you're a strong match.</p></li>
+<p style="margin:10px 0 0;font-size:16px;line-height:1.55;color:#5E4339">For experienced people moving into AI safety, or already in it and looking for a better fit.</p>
+<ol style="margin:24px 0 0;padding:0;list-style:none">
+<li style="padding:14px 0;border-top:1px solid #EFC3B4"><h3 style="margin:0 0 4px;font-size:17px;font-weight:600;line-height:1.35"><span style="color:#B23A1E;margin-right:8px">1</span>Talk</h3><p style="margin:0;font-size:16px;line-height:1.5;color:#2E333B">A 30-minute call about your experience and what you want next.</p></li>
+<li style="padding:14px 0;border-top:1px solid #EFC3B4"><h3 style="margin:0 0 4px;font-size:17px;font-weight:600;line-height:1.35"><span style="color:#B23A1E;margin-right:8px">2</span>Assess</h3><p style="margin:0;font-size:16px;line-height:1.5;color:#2E333B">Where we think you'd fit, including roles that aren't advertised.</p></li>
+<li style="padding:14px 0 0;border-top:1px solid #EFC3B4"><h3 style="margin:0 0 4px;font-size:17px;font-weight:600;line-height:1.35"><span style="color:#B23A1E;margin-right:8px">3</span>Refer</h3><p style="margin:0;font-size:16px;line-height:1.5;color:#2E333B">We refer you where we think you'd fit best.</p></li>
 </ol>
-<a href="candidates.html" style="display:inline-block;margin-top:32px;padding:10px 0;font-size:17px;font-weight:600;color:#B23A1E;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px">How it works for talent</a>
-</div>
-</div>
-</section>
+</a>
 
-<section id="hiring" style="background:#E1F2E9">
-<div style="max-width:1120px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-wrap:wrap;gap:28px 64px">
-<div style="flex:1 1 260px;max-width:320px">
-<h2 style="margin:0;font-stretch:118%;font-weight:620;font-size:clamp(26px,2.6vw,32px);line-height:1.1;letter-spacing:-0.02em;color:#12684A">Hiring intelligence</h2>
-<p style="margin:12px 0 0;font-size:16px;line-height:1.55;color:#3D564B">For organisations hiring experienced people from outside the field.</p>
+<a id="hiring" class="card" href="organisations.html" style="background:#E1F2E9;border-radius:2px;padding:32px 28px;display:flex;flex-direction:column;color:#1D2229;text-decoration:none">
+<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px">
+<h2 style="margin:0;font-stretch:118%;font-weight:620;font-size:26px;line-height:1.12;letter-spacing:-0.02em;color:#12684A">Hiring intelligence</h2>
+<span style="flex:0 0 36px;width:36px;height:36px;border-radius:50%;border:1.5px solid #12684A;color:#12684A;display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
 </div>
-<div style="flex:999 1 520px;min-width:0">
-<ul style="margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:28px 40px">
-<li style="flex:1 1 180px;min-width:0"><h3 style="margin:0 0 6px;font-size:18px;font-weight:600;line-height:1.35">Scouting</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#2E333B">Send us a role, including closed rounds, and we'll suggest people from the 250 or so we've spoken to.</p></li>
-<li style="flex:1 1 180px;min-width:0"><h3 style="margin:0 0 6px;font-size:18px;font-weight:600;line-height:1.35">Calibration</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#2E333B">We help you read CVs from consulting, law or government, where the signals look different.</p></li>
-<li style="flex:1 1 180px;min-width:0"><h3 style="margin:0 0 6px;font-size:18px;font-weight:600;line-height:1.35">Better processes</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#2E333B">Research on how other fields hire senior people, and what puts them off AI safety hiring.</p></li>
+<p style="margin:10px 0 0;font-size:16px;line-height:1.55;color:#3D564B">For organisations hiring experienced people from outside the field.</p>
+<ul style="margin:24px 0 0;padding:0;list-style:none">
+<li style="padding:14px 0;border-top:1px solid #B9DEC9"><h3 style="margin:0 0 4px;font-size:17px;font-weight:600;line-height:1.35">Scouting</h3><p style="margin:0;font-size:16px;line-height:1.5;color:#2E333B">Send us a role, including closed rounds, and we'll suggest people.</p></li>
+<li style="padding:14px 0;border-top:1px solid #B9DEC9"><h3 style="margin:0 0 4px;font-size:17px;font-weight:600;line-height:1.35">Calibration</h3><p style="margin:0;font-size:16px;line-height:1.5;color:#2E333B">Help reading CVs from consulting, law or government.</p></li>
+<li style="padding:14px 0 0;border-top:1px solid #B9DEC9"><h3 style="margin:0 0 4px;font-size:17px;font-weight:600;line-height:1.35">Better processes</h3><p style="margin:0;font-size:16px;line-height:1.5;color:#2E333B">Research on how other fields hire senior people.</p></li>
 </ul>
-<a href="organisations.html" style="display:inline-block;margin-top:32px;padding:10px 0;font-size:17px;font-weight:600;color:#12684A;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px">How we work with organisations</a>
-</div>
-</div>
-</section>
+</a>
 
-<section id="infrastructure" style="background:#E6EAFB">
-<div style="max-width:1120px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-wrap:wrap;gap:28px 64px">
-<div style="flex:1 1 260px;max-width:320px">
-<h2 style="margin:0;font-stretch:118%;font-weight:620;font-size:clamp(26px,2.6vw,32px);line-height:1.1;letter-spacing:-0.02em;color:#2A41A3">Talent infrastructure</h2>
-<p style="margin:12px 0 0;font-size:16px;line-height:1.55;color:#434C70">For people partway through a move, and the organisations supporting them.</p>
+<a id="infrastructure" class="card" href="talent-infrastructure.html" style="background:#E6EAFB;border-radius:2px;padding:32px 28px;display:flex;flex-direction:column;color:#1D2229;text-decoration:none">
+<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px">
+<h2 style="margin:0;font-stretch:118%;font-weight:620;font-size:26px;line-height:1.12;letter-spacing:-0.02em;color:#2A41A3">Talent infrastructure</h2>
+<span style="flex:0 0 36px;width:36px;height:36px;border-radius:50%;border:1.5px solid #2A41A3;color:#2A41A3;display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
 </div>
-<div style="flex:999 1 520px;min-width:0">
-<ul style="margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:28px 40px">
-<li style="flex:1 1 180px;min-width:0"><h3 style="margin:0 0 6px;font-size:18px;font-weight:600;line-height:1.35">Programmes</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#2E333B">We help out with Lateral and GenStream, and have a grant pot for new projects.</p></li>
-<li style="flex:1 1 180px;min-width:0"><h3 style="margin:0 0 6px;font-size:18px;font-weight:600;line-height:1.35">Events</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#2E333B">Events for experienced professionals, like our evening at EAG New York.</p></li>
-<li style="flex:1 1 180px;min-width:0"><h3 style="margin:0 0 6px;font-size:18px;font-weight:600;line-height:1.35">Coordination</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#2E333B">We swap hard-to-fill roles with SteadRise, Successif and others.</p></li>
+<p style="margin:10px 0 0;font-size:16px;line-height:1.55;color:#434C70">For people partway through a move, and the organisations supporting them.</p>
+<ul style="margin:24px 0 0;padding:0;list-style:none">
+<li style="padding:14px 0;border-top:1px solid #C3CCF3"><h3 style="margin:0 0 4px;font-size:17px;font-weight:600;line-height:1.35">Programmes</h3><p style="margin:0;font-size:16px;line-height:1.5;color:#2E333B">We help out with Lateral and GenStream, and fund new projects.</p></li>
+<li style="padding:14px 0;border-top:1px solid #C3CCF3"><h3 style="margin:0 0 4px;font-size:17px;font-weight:600;line-height:1.35">Events</h3><p style="margin:0;font-size:16px;line-height:1.5;color:#2E333B">Like our evening at EAG New York.</p></li>
+<li style="padding:14px 0 0;border-top:1px solid #C3CCF3"><h3 style="margin:0 0 4px;font-size:17px;font-weight:600;line-height:1.35">Coordination</h3><p style="margin:0;font-size:16px;line-height:1.5;color:#2E333B">We swap hard-to-fill roles with SteadRise, Successif and others.</p></li>
 </ul>
-<a href="talent-infrastructure.html" style="display:inline-block;margin-top:32px;padding:10px 0;font-size:17px;font-weight:600;color:#2A41A3;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px">More on talent infrastructure</a>
-</div>
+</a>
+
 </div>
 </section>
 
-<section style="max-width:1120px;margin:0 auto;padding:clamp(64px,9vw,112px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-wrap:wrap;gap:28px 64px">
-<div style="flex:1 1 260px;max-width:320px">
-<h2 style="margin:0;font-stretch:118%;font-weight:620;font-size:clamp(26px,2.6vw,32px);line-height:1.1;letter-spacing:-0.02em">So far</h2>
+<section style="max-width:1120px;margin:0 auto;padding:0 clamp(20px,5vw,48px) clamp(64px,8vw,104px);box-sizing:border-box">
+<div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 32px">
+<h2 style="margin:0;font-stretch:118%;font-weight:620;font-size:clamp(26px,2.6vw,34px);line-height:1.1;letter-spacing:-0.02em">So far</h2>
+<a class="more" href="https://fieldbuilders.substack.com/p/good-senior-people-exist-and-were" style="display:inline-flex;align-items:center;gap:8px;padding:8px 0;font-size:17px;font-weight:600;color:#1D2229;text-decoration:none">Read our early findings<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
 </div>
-<div style="flex:999 1 520px;min-width:0">
-<p style="margin:0;max-width:760px;font-size:clamp(21px,2.3vw,27px);line-height:1.4;letter-spacing:-0.012em;font-weight:440">In the past few months we've spoken to about 250 experienced professionals, made more than 200 referrals and tracked hundreds of roles.</p>
-<p style="margin:20px 0 0;max-width:680px;font-size:18px;line-height:1.6;color:#2E333B">People we have worked with are now at: BlueDot Impact, MATS, Anthropic, Coefficient Giving, GovAI, IAPS and more.</p>
-<a href="https://fieldbuilders.substack.com/p/good-senior-people-exist-and-were" style="display:inline-block;margin-top:16px;padding:10px 0;font-size:17px;font-weight:600;color:#1D2229;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px">Read our early findings</a>
-</div>
+<p style="margin:20px 0 0;max-width:860px;font-size:clamp(21px,2.3vw,28px);line-height:1.38;letter-spacing:-0.012em;font-weight:440">In the past few months we've spoken to about 250 experienced professionals, made more than 200 referrals and tracked hundreds of roles.</p>
+<p style="margin:18px 0 0;max-width:680px;font-size:18px;line-height:1.6;color:#2E333B">People we have worked with are now at: BlueDot Impact, MATS, Anthropic, Coefficient Giving, GovAI, IAPS and more.</p>
 </section>
 
 <section id="about" style="background:#F3F4F6">
-<div style="max-width:1120px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-wrap:wrap;gap:28px 64px">
-<div style="flex:1 1 260px;max-width:320px">
-<h2 style="margin:0;font-stretch:118%;font-weight:620;font-size:clamp(26px,2.6vw,32px);line-height:1.1;letter-spacing:-0.02em">About</h2>
+<div style="max-width:1120px;margin:0 auto;padding:clamp(56px,7vw,88px) clamp(20px,5vw,48px);box-sizing:border-box">
+<div class="row2">
+<div>
+<h2 style="margin:0;font-stretch:118%;font-weight:620;font-size:clamp(26px,2.6vw,34px);line-height:1.1;letter-spacing:-0.02em">About</h2>
+<a class="more" href="about.html" style="display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:8px 0;font-size:17px;font-weight:600;color:#1D2229;text-decoration:none">More about Cairn<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
 </div>
-<div style="flex:999 1 520px;min-width:0;max-width:680px">
-<p style="margin:0 0 20px;font-size:18px;line-height:1.6">On paths that aren't clearly mapped, travellers leave cairns to help each other find the way.</p>
-<p style="margin:0;font-size:18px;line-height:1.6">Cairn is led by Sam Smith, who started this work at the Generator Residency in 2026 to help experienced professionals navigate a pivot into AI safety.</p>
-<dl style="margin:28px 0 0">
-<div style="display:flex;flex-wrap:wrap;gap:2px 24px;padding:14px 0;border-top:1px solid #D9DCE1"><dt style="flex:1 1 220px;font-weight:600">Sam Smith</dt><dd style="flex:1 1 220px;margin:0;color:#5A6270">Founder</dd></div>
-<div style="display:flex;flex-wrap:wrap;gap:2px 24px;padding:14px 0;border-top:1px solid #D9DCE1"><dt style="flex:1 1 220px;font-weight:600">Natasha Misra</dt><dd style="flex:1 1 220px;margin:0;color:#5A6270">Founding generalist</dd></div>
-<div style="display:flex;flex-wrap:wrap;gap:2px 24px;padding:14px 0;border-top:1px solid #D9DCE1;border-bottom:1px solid #D9DCE1"><dt style="flex:1 1 220px;font-weight:600">Melanie Schmid-Falter</dt><dd style="flex:1 1 220px;margin:0;color:#5A6270">Research contractor</dd></div>
-</dl>
-<a href="about.html" style="display:inline-block;margin-top:24px;padding:10px 0;font-size:17px;font-weight:600;color:#1D2229;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px">More about Cairn</a>
+<div>
+<p style="margin:0;font-size:18px;line-height:1.6">On paths that aren't clearly mapped, travellers leave cairns to help each other find the way.</p>
+<p style="margin:14px 0 0;font-size:18px;line-height:1.6">Cairn is led by Sam Smith, who started this work at the Generator Residency in 2026 to help experienced professionals navigate a pivot into AI safety.</p>
 </div>
+</div>
+<ul class="row3" style="margin:44px 0 0;padding:0;list-style:none">
+<li style="padding-top:16px;border-top:2px solid #D9DCE1"><span style="display:block;font-weight:600;font-size:18px">Sam Smith</span><span style="display:block;font-size:16px;color:#5A6270">Founder</span></li>
+<li style="padding-top:16px;border-top:2px solid #D9DCE1"><span style="display:block;font-weight:600;font-size:18px">Natasha Misra</span><span style="display:block;font-size:16px;color:#5A6270">Founding generalist</span></li>
+<li style="padding-top:16px;border-top:2px solid #D9DCE1"><span style="display:block;font-weight:600;font-size:18px">Melanie Schmid-Falter</span><span style="display:block;font-size:16px;color:#5A6270">Research contractor</span></li>
+</ul>
 </div>
 </section>
 
-<section id="contact" style="max-width:1120px;margin:0 auto;padding:clamp(64px,9vw,112px) clamp(20px,5vw,48px);box-sizing:border-box">
+<section id="contact" style="max-width:1120px;margin:0 auto;padding:clamp(64px,8vw,104px) clamp(20px,5vw,48px);box-sizing:border-box">
 <h2 style="margin:0;font-stretch:118%;font-weight:620;font-size:clamp(30px,3.6vw,44px);line-height:1.1;letter-spacing:-0.025em">Get in touch</h2>
-<div style="display:flex;flex-wrap:wrap;gap:36px 64px;margin-top:32px">
-<div style="flex:1 1 300px;min-width:0;max-width:480px">
+<div class="row2" style="margin-top:36px">
+<div>
 <h3 style="margin:0 0 8px;font-size:20px;font-weight:600;line-height:1.35">Thinking about a move?</h3>
-<p style="margin:0;font-size:17px;line-height:1.55;color:#2E333B">Tell us a bit about your background and what you're looking for. We read every form, but can't speak to everyone.</p>
+<p style="margin:0;max-width:440px;font-size:17px;line-height:1.55;color:#2E333B">Tell us a bit about your background and what you're looking for. We read every form, but can't speak to everyone.</p>
 <a href="https://airtable.com/app1o5AQYhLLkHD9k/pagSzemgoVHFT0UL7/form" style="display:inline-block;margin-top:14px;padding:10px 0;font-size:17px;font-weight:600;color:#B23A1E;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px">Fill in the short form</a>
 </div>
-<div style="flex:1 1 300px;min-width:0;max-width:480px">
+<div>
 <h3 style="margin:0 0 8px;font-size:20px;font-weight:600;line-height:1.35">Hiring for a senior role?</h3>
-<p style="margin:0;font-size:17px;line-height:1.55;color:#2E333B">Tell us about the role, whether or not it's advertised. A short note is plenty.</p>
+<p style="margin:0;max-width:440px;font-size:17px;line-height:1.55;color:#2E333B">Tell us about the role, whether or not it's advertised. A short note is plenty.</p>
 <a href="https://airtable.com/app1o5AQYhLLkHD9k/pagSzemgoVHFT0UL7/form" style="display:inline-block;margin-top:14px;padding:10px 0;font-size:17px;font-weight:600;color:#12684A;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px">Tell us about a role</a>
 </div>
 </div>
-<p style="margin:40px 0 0;font-size:17px;color:#5A6270">Anything else: info@aisrouting.org</p>
+<p style="margin:44px 0 0;font-size:17px;color:#5A6270">Anything else: info@aisrouting.org</p>
 </section>
 
 <footer style="border-top:1px solid #E2E4E8">
